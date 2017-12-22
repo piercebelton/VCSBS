@@ -1,0 +1,6 @@
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\bin\Debug\TestHello.exe.config
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\bin\Debug\TestHello.exe
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\bin\Debug\TestHello.pdb
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\obj\Debug\TestHello.csprojResolveAssemblyReference.cache
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\obj\Debug\TestHello.exe
+C:\Users\pbelton\Documents\Microsoft Press\VCSBS\Chapter 1\TestHello\TestHello\obj\Debug\TestHello.pdb
