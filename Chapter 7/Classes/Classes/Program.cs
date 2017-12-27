@@ -14,6 +14,7 @@ namespace Classes
             Point bottomRight = new Classes.Point(1366, 768);
             double distance = origin.DistanceTo(bottomRight);
             Console.WriteLine($"Distance is: {distance}");
+            Console.WriteLine($"Numer of point objects: {Point.ObjectCount()}");
         }
 
         static void Main(string[] args)
