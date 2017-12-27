@@ -29,25 +29,36 @@ namespace MathsOperators
 
         private void calculateClick(object sender, RoutedEventArgs e)
         {
-            if ((bool)addition.IsChecked)
+            try
             {
-                addValues();
+                if ((bool)addition.IsChecked)
+                {
+                    addValues();
+                }
+                else if ((bool)subtraction.IsChecked)
+                {
+                    subtractValues();
+                }
+                else if ((bool)multiplication.IsChecked)
+                {
+                    multiplyValues();
+                }
+                else if ((bool)division.IsChecked)
+                {
+                    divideValues();
+                }
+                else if ((bool)remainder.IsChecked)
+                {
+                    remainderValues();
+                }
             }
-            else if ((bool)subtraction.IsChecked)
+            catch (FormatException fEx)
             {
-                subtractValues();
+                result.Text = fEx.Message;
             }
-            else if ((bool)multiplication.IsChecked)
+            catch (OverflowException oEx)
             {
-                multiplyValues();
-            }
-            else if ((bool)division.IsChecked)
-            {
-                divideValues();
-            }
-            else if ((bool)remainder.IsChecked)
-            {
-                remainderValues();
+                result.Text = oEx.Message;
             }
         }
 
@@ -79,7 +90,7 @@ namespace MathsOperators
             int rhs = int.Parse(rhsOperand.Text);
             int outcome = 0;
 
-            outcome = lhs * rhs;
+            outcome = checked(lhs * rhs);
             expression.Text = $"{lhs} * {rhs}";
             result.Text = outcome.ToString();
         }
