@@ -51,6 +51,10 @@ namespace MathsOperators
                 {
                     remainderValues();
                 }
+                else
+                {
+                    throw new InvalidOperationException("No operator selected");
+                }
             }
             catch (FormatException fEx)
             {
@@ -59,6 +63,14 @@ namespace MathsOperators
             catch (OverflowException oEx)
             {
                 result.Text = oEx.Message;
+            }
+            catch (InvalidOperationException ioEx)
+            {
+                result.Text = ioEx.Message;
+            }
+            catch (Exception ex)
+            {
+                result.Text = ex.Message;
             }
         }
 
