@@ -10,7 +10,10 @@ namespace Classes
     {
         static void doWork()
         {
-            // TODO:
+            Point origin = new Classes.Point();
+            Point bottomRight = new Classes.Point(1366, 768);
+            double distance = origin.DistanceTo(bottomRight);
+            Console.WriteLine($"Distance is: {distance}");
         }
 
         static void Main(string[] args)
