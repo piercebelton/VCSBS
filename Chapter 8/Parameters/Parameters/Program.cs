@@ -12,10 +12,10 @@ namespace Parameters
     {
         static void doWork()
         {
-            //int i = 0;
-            //Console.WriteLine(i);
-            //pass.value(i);
-            //Console.WriteLine(i);
+            int i = 0;
+            Console.WriteLine(i);
+            Pass.Value(ref i);
+            Console.WriteLine(i);
             WrappedInt wi = new WrappedInt();
             Console.WriteLine(wi.Number);
             Pass.Reference(wi);
