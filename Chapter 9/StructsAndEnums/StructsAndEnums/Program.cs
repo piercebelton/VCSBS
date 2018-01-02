@@ -14,10 +14,23 @@ namespace StructsAndEnums
     {
         static void doWork()
         {
-            Month first = Month.December;
-            Console.WriteLine(first);
-            first++;
-            Console.WriteLine(first);
+            //Month first = Month.December;
+            //Console.WriteLine(first);
+            //first++;
+            //Console.WriteLine(first);
+
+            //Date defaultDate = new Date();
+            //Console.WriteLine(defaultDate);
+
+            Date weddingAnniversary = new Date(2018, Month.July, 14);
+            Console.WriteLine(weddingAnniversary);
+
+            Date weddingAnniversaryCopy = weddingAnniversary;
+            Console.WriteLine($"Value of copy is {weddingAnniversaryCopy}");
+
+            weddingAnniversary.AdvanceMonth();
+            Console.WriteLine($"new value of weddingAnniversary is {weddingAnniversary}");
+            Console.WriteLine($"value of copy is still {weddingAnniversaryCopy}");
         }
 
         static void Main()
