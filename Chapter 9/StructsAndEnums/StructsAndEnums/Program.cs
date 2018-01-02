@@ -14,7 +14,10 @@ namespace StructsAndEnums
     {
         static void doWork()
         {
-            // TODO:
+            Month first = Month.December;
+            Console.WriteLine(first);
+            first++;
+            Console.WriteLine(first);
         }
 
         static void Main()
