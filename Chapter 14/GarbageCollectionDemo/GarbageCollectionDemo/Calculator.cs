@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarbageCollectionDemo
 {
-    class Calculator
+    class Calculator : IDisposable
     {
         public Calculator()
         {
@@ -20,7 +20,12 @@ namespace GarbageCollectionDemo
         ~Calculator()
         {
             Console.WriteLine("Calculator is being finalized");
+            this.Dispose();
         }
 
+        public void Dispose()
+        {
+            Console.WriteLine("Calculator being disposed");
+        }
     }
 }
